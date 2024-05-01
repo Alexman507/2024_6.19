@@ -151,6 +151,10 @@
         <path fill-rule="evenodd"
               d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
     </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="bi bi-person-raised-hand" viewBox="0 0 16 16">
+        <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207"/>
+        <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+    </symbol>
     <symbol id="grid" viewBox="0 0 16 16">
         <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
     </symbol>
@@ -238,6 +242,14 @@
                     Контакты
                 </a>
             </li>
+            <li>
+                <a href="#faq" class="nav-link text-white">
+                    <svg class="bi me-2" width="16" height="16">
+                        <use xlink:href="#bi bi-person-raised-hand"/>
+                    </svg>
+                    FAQ
+                </a>
+            </li>
         </ul>
         <hr>
         <div class="dropdown">
@@ -285,48 +297,60 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-4">
                 <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Имя</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Email</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Отправить</button>
-                </form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Имя</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Email</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
 
-                <p class="d-inline-flex gap-1">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#howbuy" aria-expanded="false" aria-controls="collapseExample">
-                        Как купить?
-                    </button>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#howdelivery" aria-expanded="false" aria-controls="collapseExample">
-                        Как доставить?
-                    </button>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#waranty" aria-expanded="false" aria-controls="collapseExample">
-                        Какая гарантия?
-                    </button>
-                </p>
-                <div class="collapse" id="howbuy">
-                  <div class="card card-body">
-                    Давай через крипту братан. Можно переводом на Master Card.
-                  </div>
-                </div>
-                <div class="collapse" id="howdelivery">
-                  <div class="card card-body">
-                    Доставим голубиной почтой или на трёх верблюдах.
-                  </div>
-                </div>
-                <div class="collapse" id="waranty">
-                  <div class="card card-body">
-                    К сожалению, гарантии никакой нет. Мыльный пузырь всхлопнется, мы соберем сливки с мамонтов и укатим в закат :))
-                  </div>
-                </div>
+
             </div>
 
 
         </main>
+
+        <header>
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal text-body-emphasis">FAQ</h1>
+                <p class="fs-5 text-body-secondary">Ответы на часто задаваемые вопросы:</p>
+            </div>
+        </header>
+
+
+        <p class="d-inline-flex gap-1">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#howbuy" aria-expanded="false" aria-controls="collapseExample">
+                Как купить?
+            </button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#howdelivery" aria-expanded="false" aria-controls="collapseExample">
+                Как доставить?
+            </button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#waranty" aria-expanded="false" aria-controls="collapseExample">
+                Какая гарантия?
+            </button>
+        </p>
+        <div class="collapse" id="howbuy">
+            <div class="card card-body">
+                Давай через крипту братан. Можно переводом на Master Card.
+            </div>
+        </div>
+        <div class="collapse" id="howdelivery">
+            <div class="card card-body">
+                Доставим голубиной почтой или на трёх верблюдах.
+            </div>
+        </div>
+        <div class="collapse" id="waranty">
+            <div class="card card-body">
+                К сожалению, гарантии никакой нет. Мыльный пузырь всхлопнется, мы соберем сливки с мамонтов и укатим в закат :))
+            </div>
+        </div>
 
     </div>
 
