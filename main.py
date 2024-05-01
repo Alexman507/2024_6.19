@@ -8,7 +8,7 @@ serverPort = 8080
 class MyServer(BaseHTTPRequestHandler):
 
     def __get_index(self):
-        with open('index.html', 'r') as f:
+        with open('index.html', 'r', encoding='UTF-8') as f:
             response = f.read()
         return response
 
